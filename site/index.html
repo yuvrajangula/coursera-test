@@ -4,9 +4,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Orignal Browser SYNC TAB!</title>
+	<title>Github Index Page</title>
 </head>
 <body>
+	<h1 id="top">TOP OF PAGE</h1>
+<a href="#bottom"><h5>Take Me To The Bottom</h5></a>
 	<header>Header Test Element</header>
 <h1>My name is Yuvraj Angula</h1><!--this is used for heading 1-->
 <div>div 1</div>
@@ -47,11 +49,12 @@
 </p>
 </div>
 <hr>
-<h1>---&gt; Unorderd List &lt;---</h1>
+<a id="unorderdlist"><h1>---&gt; Unorderd List &lt;---</h1></a>
 <!--For creating Unorderd list we use "ul" Tag-->
+<section>
 <ul> 
-<li>milk</li><!--this will create bulltien list items-->
-<li>butter</li>
+<!--Links to every section of this page--><li>milk</li><!--this will create bulltien list items-->
+<li><a href='#butter'>#Butter</a></li>
 <li>cookies</li>
 	<ul>
 		<li>butter</li>
@@ -59,6 +62,7 @@
 	</ul>
 <li>bread</li>
 </ul>
+</section>
 <hr>
 <h1>---&gt; Ordered List &lt;---</h1>
 <ol><!--this will create numbered list-->
@@ -74,12 +78,20 @@
 	<li>Gujrat</li>
 </ol>
 <hr>
-<h1>&lt; &amp; &gt;</h1>
+<h3>&lt; &amp; &gt;</h3>
 <!-- "&amp;" is used for printing ampercent sign -->
 <!-- these are used to create "&gt;" greater than and "&lt;" lesser than signs -->
-
-<a href="same-directory.html" title="this link will open same-directory page"><h1>Next Page</h1><!--This page is now linked with the next page "same-directory.html"--></a>
+<section id="butter">
+	<h2>Welcome to the Butter Section</h2>
+	<h2><p>you will see the butter section now i will do some chit chat talkin bakwas in punjabi. I just started a course for learning HTML5,CSS,JavaScript....... I think This much "Bakwas" will be enough for Testing tags</p></h2>
+</section>
+<a href="#unorderdlist">Back to UNORDERED LIST</a>
+<br><br><br><br><br>
+<a href="same-directory.html" title="this link will open same-directory page"><div>Next Page</div><!--This page is now linked with the next page "same-directory.html"--></a>
 <!-- href stands for hypertext refrence-->
+<a href="https://github.com/yuvrajangula" title="my github link" target="_blank"><h2>Github</h2></a>
+<a href="#top"><h5>Take me to the top of this page</h5></a>
+<h1 id='bottom'></h1>
 <footer>Yuvraj Angula &copy;Copyright 2020</footer>
 </body>
 </html>
