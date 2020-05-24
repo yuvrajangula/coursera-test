@@ -4,15 +4,28 @@
 	<title>Same Directory Page</title>
 </head>
 <body>
-<h1>This Page is opened from the &quot;index.html&quot; page</h1>
+	<!--pseudo Class Selectors-->
+	<header>
+		<ul>
+			<li><a href="index.html">Index Page</a></li>
+			<li><a href="https://www.google.com" target="_blank">Google</a></li>
+			<li><a href="https://www.github.com/yuvrajangula" target="_blank">Github</a></li>
+		</ul>
+	</header>
+<section>
+	<div>Div 1</div>
+	<div>Div 2</div>
+	<div>Div 3</div>
+	<div>Div 4</div>
+	<div>Div 5</div>
+	<div>Div 6</div>
+</section>
+<h2>This Page is opened from the &quot;index.html&quot; page</h2>
+<h1>IMAGES</h1>
 <img src="https://i7.pngflow.com/pngimage/744/642/png-github-inc-version-control-computer-software-github-cartoon-fictional-character-desktop-wallpaper-git-clipart.png" title="web link picture" width="300" height="200">
-<br>
-<hr>
-<img src="octocat.png" width="400" height="235" title="Github octocat">
-<hr>
-<img src="Quote1.jpg" width="400" height="235"title="Quote1">
-<hr>
-<img src="Quote2.jpg" width="400" height="235" title="Quote2">
+<img src="octocat.png" width="300" height="200" title="Github octocat">
+<img src="Quote1.jpg" width="300" height="200"title="Quote1">
+<img src="Quote2.jpg" width="300" height="200" title="Quote2">
 <hr>
 <h1 id="heading">HEADING 1</h1>
 <h2>Paragraph 1</h2>
@@ -27,6 +40,42 @@
 <div> DIV for testing CSS Tags</div>
 <!--CSS STYLING TAGS-->
 <style>
+	/*pseudo class selector designing*/
+	header li{
+		list-style: none;
+	}
+	/*No. 3 in the nth-child states the 3rd link of unordered list*/
+	header li:nth-child(3){
+		font-size: 20px;
+	}
+	/*For converting text into buttons look*/
+	a:link, a:visited {
+		text-decoration: none;
+		background-color: green;
+		border: 1px solid blue;
+		color: black;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	/* Below code will give button a hover effect*/
+	a:hover,  a:active {
+		background-color: yellow;
+		color: red;
+	}
+	section div:nth-child(odd):hover{
+		color: white;
+		background-color: blue;
+		cursor: pointer;
+	}
+	section div:nth-child(even):hover{
+		color: white;
+		background-color: blue;
+	    cursor: pointer;
+	}
+
+
 article , div {
 	color: brown;
 	font-size: 40px;
