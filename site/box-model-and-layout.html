@@ -13,9 +13,11 @@
 			padding: 0;
 			background-image: url("Quote2.jpg");
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: top right;
 		}
 		#box{
+			position: relative;
+			left: 525px;
 			background-color: blue;
 			padding: 10px;
 			border: 5px solid black;
@@ -50,11 +52,45 @@
 			background-color: gray;
 			border: dashed;
 		}
-
+		#para {
+			background-color: yellow;
+		}
+		p{
+			position: relative;
+			width: 40px;
+			height: 40px;
+			border: 1px solid black;
+			float: left;
+			margin-right:10px;
+			left: 570px;
+		}
+		#p1 {
+			background-color: #A52A2A;
+		}
+		#p2 {
+			background-color: #DEB887;
+		}
+		#p3 {
+			background-color: #5F9EA0;
+		}
+		#p4 {
+			background-color: #FF7F50;
+		}
+		section {
+			clear: left;
+		}
+		#heading{
+			position: relative;
+			left: 560px;
+		}
+		#fle{
+			position: relative;
+			left: 550px;
+		}
 	</style>
 </head>
 <body>
-<h1>BOX MODEL</h1>
+<h1 id="heading">BOX MODEL</h1>
 
 <div id="box">
 	<div id="content">
@@ -62,6 +98,13 @@
 	</div>
 </div>
 <div id="bg">Background Properties Here!</div>
-
+<h1 id="fle">Floating Elements</h1>
+<div id="para">
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<section>This is regular content continuing after the paragraph boxes.</section>
+</div>
 </body>
 </html>
