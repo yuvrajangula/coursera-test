@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Box Model</title>
+	<style>	
+		* { /* The " * " is used when you want to apply your css tag to every element in the body */
+			box-sizing: border-box;
+		}
+		body{
+			background-color: gray;
+			margin: 0;
+			padding: 0;
+			background-image: url("Quote2.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#box{
+			background-color: blue;
+			padding: 10px;
+			border: 5px solid black;
+			margin: 40px;
+			width: 200px;
+			height: 150px;
+			overflow: auto;/* use this if we want to show scroll bar and our text is coming out of the box*/
+		}
+		#content{
+			background-color: #90EE90; /*green*/
+			border: groove; 
+			border-color: red;
+			border-width: thick;
+			border-top-color: black;
+			border-top-style: dashed; 
+			border-bottom-color: black;
+			border-bottom-style: dashed;
+			font-weight: bolder;
+			font-size: larger;
+		}
+		h1{
+			color: green;
+			border: dashed;
+			border-color: black;
+			text-align: center;
+			margin-bottom: 30px;
+			width: 220px;
+		}
+		#bg {
+			width: 450px;
+			height: 300px;
+			background-color: gray;
+			border: dashed;
+		}
+
+	</style>
+</head>
+<body>
+<h1>BOX MODEL</h1>
+
+<div id="box">
+	<div id="content">
+		content of the box inside the div tag's. Let's see what changes we can make here. 
+	</div>
+</div>
+<div id="bg">Background Properties Here!</div>
+
+</body>
+</html>
