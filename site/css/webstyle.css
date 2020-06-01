@@ -26,7 +26,7 @@ body {
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
-  font-size: 1.5em;
+  font-size: 2.5em; 
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -83,3 +83,48 @@ body {
 }
 /* END HEADER */
 
+/* Large Devices only*/
+@media  (min-width: 1200px) {
+
+}
+/* Medium Devices only */
+@media  (min-width: 992px) and (max-width: 1199px)  {
+/* Header */
+	#logo-img{
+		background: url('../angulabro_logo.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+	/* End of Header */
+}
+/* Small Devices Only */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Extra Small Devices Only */
+@media (max-width: 767px){
+/* Header */
+.navbar-brand{
+	padding-top: 10px;
+	height: 80px;
+}
+.navbar-brand h1 { /* Restaurant Name */
+	padding-top: 10px;
+	font-size: 6vw;
+}
+.navbar-brand p {/* 100% cert */
+ 	text-transform: uppercase;
+ 	font-size: .6em;
+ 	margin-top: 12px;
+}
+.navbar-brand p img {/* Star-K */
+	height: 20px;
+}
+#collapsable-nav a {/* Collapsed nav menu glyph */
+	font-size: 1.2em;
+}
+#collapsable-nav a span{
+	font-size: 1em;
+}
+}
